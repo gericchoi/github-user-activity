@@ -30,7 +30,6 @@ function fetchApi($url) {
 function getPushEvent($filteredEvents) {
     if (!empty($filteredEvents)) {
       foreach ($filteredEvents as $event) {
-
         $type = $event['type'];
 
         if(in_array($type, ['PushEvent'])){
